@@ -25,7 +25,7 @@ type Connection interface {
 	Close()
 
 	// Clone clones the modbus connection, keeping the underlying transport.
-	Clone(deviceID byte) Connection
+	// Clone(deviceID byte) Connection
 
 	// Logger sets a logging instance for physical bus operations
 	Logger(l Logger)
